@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kotek.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                x:Name="Kotek"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="A cat from cataas.com" />
+            <Button
+                x:Name="CounterBtn"
+                Text="Kotek" 
+                SemanticProperties.Hint="Loads a new cat image"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="CounterBtn2"
+                Text="Kotek z tekstem"
+                Clicked="OnCounterClicked2"
+                HorizontalOptions="Fill" />
+            <Entry
+                x:Name="Kotek2" />
+            <Button
+                x:Name="CounterBtn3"
+                Text="Kotek gif"
+                Clicked="OnCounterClicked2"
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="CounterBtn4"
+                Text="Kotek gif z tekstem"
+                Clicked="OnCounterClicked2"
+                HorizontalOptions="Fill" />
+            <Entry
+                x:Name="Kotek3" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
