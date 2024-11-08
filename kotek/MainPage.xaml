@@ -9,34 +9,14 @@
             Spacing="25">
             <Image
                 x:Name="Kotek"
-                HeightRequest="185"
+                HeightRequest="{Binding Source={x:Reference slider},
+                                  Path=Value}"
+                MinimumHeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="A cat from cataas.com" />
-            <Button
-                x:Name="CounterBtn"
-                Text="Kotek" 
-                SemanticProperties.Hint="Loads a new cat image"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
-            <Button
-                x:Name="CounterBtn2"
-                Text="Kotek z tekstem"
-                Clicked="OnCounterClicked2"
-                HorizontalOptions="Fill" />
-            <Entry
-                x:Name="Kotek2" />
-            <Button
-                x:Name="CounterBtn3"
-                Text="Kotek gif"
-                Clicked="OnCounterClicked2"
-                HorizontalOptions="Fill" />
-            <Button
-                x:Name="CounterBtn4"
-                Text="Kotek gif z tekstem"
-                Clicked="OnCounterClicked2"
-                HorizontalOptions="Fill" />
-            <Entry
-                x:Name="Kotek3" />
+            <Slider x:Name="slider"
+                    Maximum="500"
+                    Minimum="185" />
         </VerticalStackLayout>
     </ScrollView>
 

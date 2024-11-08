@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("kotek")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3fe89de8d1b3b42afd0661ebb6155b0f8487a857")]
 [assembly: System.Reflection.AssemblyProductAttribute("kotek")]
 [assembly: System.Reflection.AssemblyTitleAttribute("kotek")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

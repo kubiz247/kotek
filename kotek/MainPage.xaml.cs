@@ -1,27 +1,21 @@
-﻿namespace kotek
+﻿using static System.Net.WebRequestMethods;
+
+namespace kotek
 {
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
+            string link = "https://cataas.com/cat";
+            Kotek.Source = link;
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void OnSliderValueChange(object sender, ValueChangedEventArgs args)
         {
-            Kotek.Source = "https://cataas.com/cat?";
-        }
-        private void OnCounterClicked2(object sender, EventArgs e)
-        {
-            Kotek.Source = "https://cataas.com/cat/cute/says/" + Kotek2.Text;
-        }
-        private void OnCounterClicked3(object sender, EventArgs e)
-        {
-            Kotek.Source = "https://cataas.com/cat/gif";
-        }
-        private void OnCounterClicked4(object sender, EventArgs e)
-        {
-            Kotek.Source = "https://cataas.com/cat/cute/says/" + Kotek3.Text;
+            
+            double value = args.NewValue;
+            Kotek.HeightRequest = value;
         }
     }
 }
